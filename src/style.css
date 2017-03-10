@@ -1,0 +1,226 @@
+h1{
+    line-height: 20px;
+    color: black;
+}
+h2{
+
+}
+h3{
+
+}
+h4{
+       font-size: 19px;
+}
+p{
+
+}
+
+.header{
+    margin-left: 10%;
+    margin-bottom: 6%;
+    margin-top: 1%;
+}
+#logo{
+    width: 35%;
+}
+
+.contentContainer{
+    width: 80%;
+    margin-left: 10%;
+}
+.infoContainer{
+    margin-left: 10%;
+    margin-right: 6%;
+    width: 20%;
+    float: left;
+}
+.grid{
+    display: flex;
+    width: 50vmin;  
+    height: 50vmin;
+   /* flex-direction: row;*/
+    flex-wrap: wrap;
+    margin-bottom: 7%;
+}
+
+.square{
+    width:10%;
+    height: 10%;
+    background: white;
+    outline: 1px solid black;
+    text-align: center;
+}
+
+.square:hover{
+    cursor: pointer;
+    background-color:lightgray;
+}
+/*
+.square:active{
+	width: 5vh;
+	height: 5vh;
+	background-color: #8cc63c;
+	-moz-border-radius: 2.5vh;
+	-webkit-border-radius: 2.5vh;
+	border-radius: 2.5vh;
+}*/
+
+.xNy{
+    background-image: url("./arrow.png");
+    background-size: cover;
+    width: 60vmin;
+    height: 60vmin;
+    position: absolute;
+    margin-left: -5vmin;
+    margin-top: -5vmin;
+    pointer-events: none;
+}
+
+.fontFormat{
+      font: 20px "Century Gothic", Futura, sans-serif;
+      font-weight: bold;
+      margin: 20px;
+      color: #8cc63c;
+}
+
+.circle {
+  	width: 25%;
+	height: 25%;
+	background-color: #8cc63c;
+	/*-moz-border-radius: 50% for circle;*/
+	-webkit-border-radius: 50%;
+    border-radius: 50%;
+    top: 50%;
+    position: relative;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    }
+
+.line{
+    stroke:#8cc63c;
+    stroke-width: 3;
+    z-index: 3;
+    pointer-events: none;
+}
+.statusBar{
+    float: left;
+    width: 100%;
+    border-top: 1px solid black;
+}
+/*
+SOM EN IF-SATS I CSS (@media)
+minska storleken på pilen om skärmen är liten
+https://www.w3schools.com/cssref/css3_pr_mediaquery.asp
+
+max-device-width
+
+@media screen and (max-width: 480px) {
+    .line{
+    stroke:black;
+    stroke-width: 2;
+    z-index: 3;
+    pointer-events: none;
+    }
+    */
+
+
+.svgStyle{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 3;
+    pointer-events: none;
+    top: 0;
+    left: 0;
+    fill: #8cc63c;
+}
+
+/*OBS! SNODDE FRÅN DERAS HEMSIDA från här*/
+.button{
+    pointer-events: all;
+    float: right;
+    margin-right: 5vmin;
+    margin-top: 95%;
+    padding: 18px 28px 16px 28px;
+    font-size: 16px;
+    background-color: #8cc63c;
+    color: #fff;
+    border-radius: 3px;
+    text-transform: uppercase;
+    /*display: inline-block;*/
+    cursor: pointer;
+    text-decoration: none;
+    box-sizing: border-box;
+    text-align: center;
+    letter-spacing: 0;
+    -webkit-transition-property: background-color;
+    -moz-transition-property: background-color;
+    transition-property: background-color;
+    -webkit-transition-duration: .4s;
+    -moz-transition-duration: .4s;
+    transition-duration: .4s;
+    -webkit-transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    -moz-transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    font-family: "Radikal-Light",sans-serif;
+    font-weight: normal;
+    font-style: normal;
+}
+.button:hover {
+    background-color: #bbdd8b;
+    text-decoration: none;
+}
+
+/*till här*/
+
+.button:disabled{
+    background: grey;
+}
+
+
+
+@media screen and (max-width: 1570px) {
+    .grid{
+        margin-bottom: 10%;
+    }
+}
+@media screen and (max-width: 1075px) {
+    .infoContainer{
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: 8%;
+        float: none;
+        width: 100%;
+    }
+    .grid{
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 14%;
+    }
+    .header{
+        margin-bottom: 2%;
+    }
+}
+@media screen and (max-width: 725px) {
+    .grid{
+        margin-bottom: 17%;
+    }
+}
+@media screen and (max-width: 665px) {
+    #logo{
+        width: 90%;
+    }
+    .button{
+        padding: 12px 22px 12px 22px;
+        font-size: 9px;
+    }
+}
+@media screen and (max-width: 560px) {
+    .button{
+        padding: 4px 9px 4px 9px;
+        font-size: 9px;
+    }
+    .line{
+        stroke-width: 2px;
+    }
+}
