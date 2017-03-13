@@ -1,6 +1,6 @@
 # awesome-grid
 
-<h2>A bachelor project by:</h2>
+<h2>A bachelor project <a href="http://tretton37.com/">@Tretton37</a> by:</h2>
 Douglas Nilsson Arslan<br /> 
 Henrik Månsson<br /> 
 Lukas Hedqvist<br /> 
