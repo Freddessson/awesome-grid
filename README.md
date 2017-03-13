@@ -20,8 +20,8 @@ Otto Fredriksson<br />
 
 <h2>Install/Run instruction</h2>
 
-<h3>Installation</h3>
-Note, NodeJS & NPM needed.<br /> 
+<h3>Installation - Note, NodeJS & NPM needed.</h3>
+
 1. Run "npm install" in terminal. <br /> 
 2. Go to "Backend" folder<br /> 
 3. Run "npm install" in terminal. <br /> 
@@ -29,7 +29,7 @@ Note, NodeJS & NPM needed.<br />
 
 
 <h3>Run</h3> 
- 
+
 1. Launch mongoDB: "mongod"<br /> 
 2. Start backend. Go to "Backend" folder and run "Node server.js" in terminal.
 This will return "Magic happens on port 3500" <br /> 
