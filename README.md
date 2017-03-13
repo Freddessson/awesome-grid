@@ -1,10 +1,10 @@
 # awesome-grid
 
 <h2>A bachelor project by:</h2>
-Douglas Nilsson Arslan
-Henrik Månsson
-Lukas Hedqvist
-Otto Fredriksson
+Douglas Nilsson Arslan<br /> 
+Henrik Månsson<br /> 
+Lukas Hedqvist<br /> 
+Otto Fredriksson<br /> 
 
 
 <h2>Screen Grabs</h2>
