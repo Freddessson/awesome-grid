@@ -22,18 +22,16 @@ Otto Fredriksson<br />
 
 <h3>Installation - Note, NodeJS & NPM needed.</h3>
 
-1. Run ```javascript npm install``` in terminal. <br /> 
-1. Run ```npm install``` in terminal. <br />
-1. Run `javascript npm install` in terminal. <br />
+1. Run `npm install` in terminal. <br />
 2. Go to "Backend" folder<br /> 
-3. Run "npm install" in terminal. <br /> 
-4. Install mongoDB: "npm install mongodb --save -g"<br /> 
+3. Run `npm install` in terminal. <br /> 
+4. Install mongoDB: `npm install mongodb --save -g`<br /> 
 
 
 <h3>Run</h3> 
 
-1. Launch mongoDB: "mongod"<br /> 
-2. Start backend. Go to "Backend" folder and run "Node server.js" in terminal.
+1. Launch mongoDB: `mongod`<br /> 
+2. Start backend. Go to "Backend" folder and run `Node server.js` in terminal.
 This will return "Magic happens on port 3500" <br /> 
-3. Launch the View (React). Run "npm run dev" in "awesome-grid" folder.
+3. Launch the View (React). Run `npm run dev` in "awesome-grid" folder.
 The View runs at http://localhost:8080/<br /> 
