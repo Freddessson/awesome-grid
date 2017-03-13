@@ -17,6 +17,8 @@ var cors = require('cors')
 // models
 var Coordinates = require('./app/models/coordinates');
 
+var toRealCoord = require('./toRealCoordinate.js');
+
 // configure app to use bodyParser()
 // this will let us get the data from a POST
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -40,7 +42,7 @@ router.use(function (req, res, next) {
 
 // more routes for our API will happen here
 
-// on routes that end in /coordinate
+// on routes that end in /coordinates
 // ----------------------------------------------------
 router.route('/coordinates')
 
@@ -50,12 +52,20 @@ router.route('/coordinates')
         var coordinates = new Coordinates();      // create a new instance of the Coordinates model
 
         coordinates.coordinate1 = req.body.coordinate1;
-                    console.log(req.body.coordinate1 + "c1")//ddddddddddddddddddddddddddddd
-
         coordinates.coordinate2 = req.body.coordinate2;
 
-        /*coordinates.coordinate3 = req.body.coordinate1;
-        coordinates.coordinate4 = req.body.coordinate2;*/
+        //converting the square IDs to String to handle them more easily.
+        var c1 = req.body.coordinate1
+        var c2 = req.body.coordinate2
+
+        //sending the coordinates to 'toRealCoordinate.js in order to get out X and Y values
+            var realCoordList = toRealCoord.toRealCoordinate(c1, c2)
+
+            coordinates.x1 = realCoordList.X1;
+            coordinates.y1 = realCoordList.Y1;
+            coordinates.x2 = realCoordList.X2;
+            coordinates.y2 = realCoordList.Y2;
+
 
         // save the coordinates and check for errors
         coordinates.save({}, function (err) {
@@ -97,7 +107,7 @@ router.route('/coordinates/:coordinates_id')
         });
     });
 
-    
+
 //update coordinates by id using PUT http://localhost:3500/api/coordinates/coordinateID 
 router.route('/coordinates/:coordinates_id')
     .put(function (req, res) {
@@ -107,7 +117,19 @@ router.route('/coordinates/:coordinates_id')
                 res.send(err);
             coordinates.coordinate1 = req.body.coordinate1;
             coordinates.coordinate2 = req.body.coordinate2;
-            // save the coordinate
+            
+            //toRealCoordinate - converting coordinate1 & 2 to real coordinates 
+            var c1 = req.body.coordinate1
+            var c2 = req.body.coordinate2
+
+            var realCoordList = toRealCoord.toRealCoordinate(c1, c2)
+
+            coordinates.x1 = realCoordList.X1;
+            coordinates.y1 = realCoordList.Y1;
+            coordinates.x2 = realCoordList.X2;
+            coordinates.y2 = realCoordList.Y2;
+
+            // save the coordinates
             coordinates.save(function (err) {
                 if (err)
                     res.send(err);
@@ -123,7 +145,6 @@ router.route('/coordinates/:coordinates_id')
         var coordinates = new Coordinates();
         Coordinates.findById(req.params.coordinates_id, function (err, coordinates) {
             console.log("[Delete] coordinates")
-            // re,pve the coordinate
             coordinates.remove({
                 _id: req.params.coordinates_id
             }, function (err, coordinates) {
