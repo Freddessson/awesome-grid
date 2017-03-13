@@ -1,7 +1,7 @@
 # awesome-grid
 
 <h2>A bachelor project <a href="http://tretton37.com/">@Tretton37</a> by:</h2>
-Douglas Nilsson Arslan<br /> 
+Douglas Erol Nilsson <br /> 
 Henrik Månsson<br /> 
 Lukas Hedqvist<br /> 
 Otto Fredriksson<br /> 
@@ -29,7 +29,7 @@ Note, NodeJS & NPM needed.<br />
 
 
 <h3>Run</h3> 
-tst
+ 
 1. Launch mongoDB: "mongod"<br /> 
 2. Start backend. Go to "Backend" folder and run "Node server.js" in terminal.
 This will return "Magic happens on port 3500" <br /> 
