@@ -273,12 +273,7 @@ export default class Grid extends React.Component {
                     {/*the Status messages*/}
                     <div className="statusBar">
                         <h4>{this.state.message}</h4>
-                        <div>
-                            <p>Width : {this.state.ResizeData.Width}</p>
-                            <p>Height : {this.state.ResizeData.Height}</p>
-                            <p>y1: {this.state.y1}</p>
                             <ReactWindowResizeListener onResize={this.handleResize} />
-                        </div>
                     </div>
                 </div>
             </div>
