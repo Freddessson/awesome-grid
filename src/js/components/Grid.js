@@ -234,7 +234,7 @@ export default class Grid extends React.Component {
                     The grid is formed of 100 square divs. 
                     Each square has a unique key, "i".
                     If a square div is clicked, execute gridClick() to handle the coordinate data.
-                    Draw a circle in the square div (if it was the first chosen coordinate).
+                    Draw a circle in the square div (if it was the first chosen coordinate)
                     */}
                     <div className="grid">
                         <div className="xNy">
