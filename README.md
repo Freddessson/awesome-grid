@@ -28,8 +28,8 @@ Note, NodeJS & NPM needed.<br />
 
 
 <h3>Run</h3> 
-1. Launch mongoDB: "mongod"
+1. Launch mongoDB: "mongod"<br /> 
 2. Start backend. Go to "Backend" folder and run "Node server.js" in terminal.
-This will return "Magic happens on port 3500" 
+This will return "Magic happens on port 3500" <br /> 
 3. Launch the View (React). Run "npm run dev" in "awesome-grid" folder
-The View runs at http://localhost:8080/
+The View runs at http://localhost:8080/<br /> 
