@@ -22,7 +22,9 @@ Otto Fredriksson<br />
 
 <h3>Installation - Note, NodeJS & NPM needed.</h3>
 
-1. Run ```javascript npm install´´´ in terminal. <br /> 
+1. Run ```javascript npm install``` in terminal. <br /> 
+1. Run ```npm install``` in terminal. <br />
+1. Run `javascript npm install` in terminal. <br />
 2. Go to "Backend" folder<br /> 
 3. Run "npm install" in terminal. <br /> 
 4. Install mongoDB: "npm install mongodb --save -g"<br /> 
