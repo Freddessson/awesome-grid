@@ -2,17 +2,9 @@ h1{
     line-height: 20px;
     color: black;
 }
-h2{
 
-}
-h3{
-
-}
 h4{
        font-size: 19px;
-}
-p{
-
 }
 
 .header{
@@ -213,6 +205,14 @@ max-device-width
     .button{
         padding: 12px 22px 12px 22px;
         font-size: 9px;
+    }
+    .grid{
+        width: 70vmin;
+        height: 70vmin;
+    }
+    .xNy{
+        width: 80vmin;
+        height: 80vmin;
     }
 }
 @media screen and (max-width: 560px) {
