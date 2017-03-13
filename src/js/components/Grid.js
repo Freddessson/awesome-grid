@@ -265,11 +265,6 @@ export default class Grid extends React.Component {
 
                     </div>
 
-                    {/*<div>
-                        <p>First value: {this.state.firstValue}</p>
-                        <p>Second value: {this.state.secondValue}</p>
-                    </div>*/}
-
                     {/*the Status messages*/}
                     <div className="statusBar">
                         <h4>{this.state.message}</h4>
