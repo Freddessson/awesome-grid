@@ -224,3 +224,8 @@ max-device-width
         stroke-width: 2px;
     }
 }
+
+::selection {
+    background-color: #8cc63c;
+    color: white;
+}
