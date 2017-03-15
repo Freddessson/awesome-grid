@@ -20,7 +20,7 @@ Otto Fredriksson<br />
 
 <h2>Install/Run instruction</h2>
 
-<h3>Installation - Note, NodeJS & NPM needed.</h3>
+<h3>Installation - Prerequisites: NodeJS & NPM needed.</h3>
 
 1. Run `npm install` in terminal. <br />
 2. Go to "Backend" folder<br /> 
