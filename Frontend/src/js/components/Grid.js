@@ -241,12 +241,10 @@ export default class Grid extends React.Component {
 
                             <button className="button" disabled={this.state.submitBtnDisabled}
                                 onClick={() => this.submitCoordinates(this.state.firstValue, this.state.secondValue)}>Submit</button>
-
                         </div>
                         {grid.map((i) => {
                             return (<div key={i} onClick={(e) => this.gridClick(e, i)} className="square">{this.marked(i)}</div>);
                         })}
-
                     </div>
 
                     {this.drawArrow()}
