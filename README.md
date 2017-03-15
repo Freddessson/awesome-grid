@@ -13,7 +13,7 @@ Otto Fredriksson<br />
 ![Awesome-grid preview](/screenGrab.jpg?raw=true "Awesome-grid preview")
 
 
-<p>Mobile version (iPhone 6):</p><br />
+<p>Mobile version (iPhone 6): </p><br />
 ![Awesome-grid preview iPhone 6](/screenGrab_iPhone6.jpg?raw=true "Awesome-grid preview iPhone 6")
 
 
