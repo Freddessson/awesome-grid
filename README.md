@@ -14,7 +14,7 @@ Otto Fredriksson<br />
 
 
 <p>Mobile version (iPhone 6): </p><br />
-![Awesome-grid preview iPhone 6](/screenGrab_iPhone6.jpg?raw=true)
+![Awesome-grid preview iPhone 6](https://raw.githubusercontent.com/Freddessson/awesome-grid/master/screenGrab_iPhone6.jpg)
 
 
 
