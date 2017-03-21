@@ -24,12 +24,10 @@ This will return "Magic happens on port 3500"
 The View runs at http://localhost:8080/  
 
 # Screen Grabs
-
-Desktop version:  
-![Awesome-grid preview](./screenGrab.jpg?raw=true)
-
-
-Mobile version (iPhone 6):
-![Awesome-grid preview iPhone 6](./screenGrab_iPhone6.jpg?raw=true)
  
 ![Awesome-grid responsive](./AwesomeGrid.jpg?raw=true)
+
+![Awesome-grid preview](./screenGrab.jpg?raw=true)
+
+![Awesome-grid preview iPhone 6](./screenGrab_iPhone6.jpg?raw=true)
+
