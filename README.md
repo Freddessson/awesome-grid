@@ -1,5 +1,9 @@
 # awesome-grid
 
+![Awesome-grid preview](./screenGrab.jpg?raw=true)
+![Awesome-grid preview](/screenGrab.jpg?raw=true)
+![alt tag](https://github.com/Freddessson/awesome-grid/blob/master/screenGrab.jpg?raw=true)
+
 <h1>A bachelor project <a href="http://tretton37.com/">@Tretton37</a> by:</h1>
 Douglas Erol Nilsson <br /> 
 Henrik Månsson<br /> 
