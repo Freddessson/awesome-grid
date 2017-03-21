@@ -25,13 +25,17 @@ Otto Fredriksson<br />
 ![alt tag](https://github.com/Freddessson/awesome-grid/blob/master/screenGrab.jpg?raw=true)
 
 <h3>Run</h3> 
-
+![Awesome-grid preview](./screenGrab.jpg?raw=true)
+![Awesome-grid preview](/screenGrab.jpg?raw=true)
+![alt tag](https://github.com/Freddessson/awesome-grid/blob/master/screenGrab.jpg?raw=true)
 1. Launch mongoDB: `mongod`<br /> 
 2. Start backend. Go to "Backend" folder and run `Node server.js` in terminal.
 This will return "Magic happens on port 3500" <br /> 
 3. Launch the View (React). Run `npm run dev` in "awesome-grid" folder.
 The View runs at http://localhost:8080/<br /> 
-
+![Awesome-grid preview](./screenGrab.jpg?raw=true)
+![Awesome-grid preview](/screenGrab.jpg?raw=true)
+![alt tag](https://github.com/Freddessson/awesome-grid/blob/master/screenGrab.jpg?raw=true)
 <h2>Screen Grabs</h2>
 
 <p>Desktop version:</p><br /> 
