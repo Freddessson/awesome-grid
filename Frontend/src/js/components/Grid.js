@@ -24,8 +24,6 @@ export default class Grid extends React.Component {
             y2: undefined,
             target1: undefined,
             target2: undefined,
-            //wWidth: window.innerWidth,
-            //wHeight: window.innerHeight,
             message: "Status: Choose the first coordinate",
             submitBtnDisabled: true, //for enabling & disabling setCoords button 
             fetchCoordsBtnDisabled: true, //for enabling & disabling fetchCoords button
@@ -37,11 +35,10 @@ export default class Grid extends React.Component {
         this.handleResize = this.handleResize.bind(this);
     }
 
+    //Changing the contents of the user interface when the screen size changes
     handleResize(e) {
-        console.log("e.currentTarget: "+e.currentTarget.innerWidth)
-        console.log("WidthW: "+this.state.ResizeData.Width)
-        if(this.state.ResizeData.Width != e.currentTarget.innerWidth) {
-            console.log("Someting is different here!! Ooooups!!!")
+
+        if (this.state.ResizeData.Width != e.currentTarget.innerWidth) {
             this.drawArrowFirstEl(this.state.target1)
             this.drawArrowSecondEl(this.state.target2)
 
@@ -52,15 +49,12 @@ export default class Grid extends React.Component {
                 Width: e.currentTarget.innerWidth,
             }
         })
-        
-
     }
 
     //Function submits coordinates to the DB via Backend (using Redux)
     submitCoordinates(c1, c2) {
         //Checks if c1 && c2 coordinates are not the same AND both values are chosen before submitted 
         if (this.state.secondValue != undefined && this.state.firstValue != this.state.secondValue) {
-            console.log(c1 + " and " + c2);
             try {
                 this.props.dispatch(setCoord(c1, c2))
 
@@ -76,21 +70,8 @@ export default class Grid extends React.Component {
                     message: "Status: Error! Communication with Back-End is faulty."
                 })
             }
-
-            ///////////////////////////////////////////////////////////////////////
-            //här borde man nog ha en if sats som kollar mot DB om värdena har matats in, innan man säger att det gick bra
-            /*  //////////////////////////////////////////////////////////////////////
-              this.setState({
-                  message: "Status: Coordinates submitted successfully. Square IDs: (" + this.state.firstValue + ", " + this.state.secondValue + ")",
-                  submitBtnDisabled: true,
-                  firstValue: undefined,
-                  secondValue: undefined,
-              })
-  */
-
         }
         else {
-            console.log("Please choose two different coordinates")
             this.setState({ message: "Status: Please choose two different coordinates" })
         }
     }
@@ -123,8 +104,8 @@ export default class Grid extends React.Component {
 
                 this.setState({ message: "Status: Choose the second coordinate" })
 
-                this.setState({ 
-                target1: target
+                this.setState({
+                    target1: target
                 })
 
             });
@@ -143,14 +124,13 @@ export default class Grid extends React.Component {
                 this.setState({ submitBtnDisabled: false })
 
                 this.setState({ message: "Status: Ready to submit, or rechoose the first coordinate" })
-                
-                this.setState({ 
-                target2: target
+
+                this.setState({
+                    target2: target
                 })
             });
         }
         else {
-            console.log("Please choose two different coordinates")
             this.setState({ message: "Status: Please choose two different coordinates" })
         }
     }
@@ -165,7 +145,7 @@ export default class Grid extends React.Component {
     }
 
     drawArrowFirstEl(element) {
-        if(!element){
+        if (!element) {
             return
         }
         //Height and width of the first chosen square div.
@@ -180,7 +160,7 @@ export default class Grid extends React.Component {
     }
 
     drawArrowSecondEl(element) {
-        if(!element){
+        if (!element) {
             return
         }
         //height and width of the second chosen square div.
@@ -214,14 +194,9 @@ export default class Grid extends React.Component {
 
     render() {
 
-        //ANVÄNDS DETTA?
-        const { coordinate } = this.props;
-
         return (
             <div>
-               
                 <div className="contentContainer">
-
                     <div className="infoContainer">
                         <h3> Culture & Beliefs</h3>
                         <p>Is the client's status quo and long term goals a good match with our values and beliefs?</p>
@@ -249,24 +224,10 @@ export default class Grid extends React.Component {
 
                     {this.drawArrow()}
 
-                    <div>
-                        {/*
-                        inspiration
-                        http://stackoverflow.com/questions/30187781/react-js-disable-button-when-input-is-empty
-                        
-                        disabled = true gör det button grå och oklickbar
-                                   false gör det grönt                        
-                        */}
-                        {/*<button className="button" disabled={this.state.fetchCoordsBtnDisabled}
-                            onClick={this.fetchCoordsFromDB.bind(this)}>load coords</button>*/}
-
-
-                    </div>
-
                     {/*the Status messages*/}
                     <div className="statusBar">
                         <h4>{this.state.message}</h4>
-                            <ReactWindowResizeListener onResize={this.handleResize} />
+                        <ReactWindowResizeListener onResize={this.handleResize} />
                     </div>
                 </div>
             </div>

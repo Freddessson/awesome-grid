@@ -5,18 +5,7 @@ Douglas Erol Nilsson <br />
 Henrik Månsson<br /> 
 Lukas Hedqvist<br /> 
 Otto Fredriksson<br /> 
-
-
-<h2>Screen Grabs</h2>
-
-<p>Desktop version:</p><br /> 
-![Awesome-grid preview](/screenGrab.jpg?raw=true)
-
-
-<p>Mobile version (iPhone 6): </p><br />
-![Awesome-grid preview iPhone 6](/screenGrab_iPhone6.jpg?raw=true)
-
-
+<br />
 
 <h2>Install/Run instruction</h2>
 
@@ -35,3 +24,14 @@ Otto Fredriksson<br />
 This will return "Magic happens on port 3500" <br /> 
 3. Launch the View (React). Run `npm run dev` in "awesome-grid" folder.
 The View runs at http://localhost:8080/<br /> 
+
+<h2>Screen Grabs</h2>
+
+<p>Desktop version:</p><br /> 
+![Awesome-grid preview](./screenGrab.jpg?raw=true)
+
+
+<p>Mobile version (iPhone 6): </p><br />
+![Awesome-grid preview iPhone 6](./screenGrab_iPhone6.jpg?raw=true)
+<br />
+![Awesome-grid responsive](./AwesomeGrid.jpg?raw=true)

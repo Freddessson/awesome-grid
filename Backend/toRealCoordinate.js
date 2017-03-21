@@ -89,7 +89,7 @@ module.exports = {
             }
         }
 
-        //if there is only one digit, y1 --> 5
+        //if there is only one digit, y1 --> 5 (since 0 to 9 are on the top op the grid, all with the y value = 5)
         if (c1.length == 1) {
             y1 = 5
         }
@@ -162,7 +162,7 @@ module.exports = {
             }
         }
 
-        //if there is only one digit, y1 --> 5
+        //if there is only one digit, y2 --> 5
         if (c2.length == 1) {
             y2 = 5
         }

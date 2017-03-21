@@ -12,6 +12,7 @@ h4{
     margin-bottom: 6%;
     margin-top: 1%;
 }
+
 #logo{
     width: 35%;
 }
@@ -20,12 +21,14 @@ h4{
     width: 80%;
     margin-left: 10%;
 }
+
 .infoContainer{
     margin-left: 10%;
     margin-right: 6%;
     width: 20%;
     float: left;
 }
+
 .grid{
     display: flex;
     width: 50vmin;  
@@ -57,15 +60,6 @@ h4{
     cursor: pointer;
     background-color:lightgray;
 }
-/*
-.square:active{
-	width: 5vh;
-	height: 5vh;
-	background-color: #8cc63c;
-	-moz-border-radius: 2.5vh;
-	-webkit-border-radius: 2.5vh;
-	border-radius: 2.5vh;
-}*/
 
 .fontFormat{
       font: 20px "Century Gothic", Futura, sans-serif;
@@ -78,7 +72,6 @@ h4{
   	width: 25%;
 	height: 25%;
 	background-color: #8cc63c;
-	/*-moz-border-radius: 50% for circle;*/
 	-webkit-border-radius: 50%;
     border-radius: 50%;
     top: 50%;
@@ -93,27 +86,12 @@ h4{
     z-index: 3;
     pointer-events: none;
 }
+
 .statusBar{
     float: left;
     width: 100%;
     border-top: 1px solid black;
 }
-/*
-SOM EN IF-SATS I CSS (@media)
-minska storleken på pilen om skärmen är liten
-https://www.w3schools.com/cssref/css3_pr_mediaquery.asp
-
-max-device-width
-
-@media screen and (max-width: 480px) {
-    .line{
-    stroke:black;
-    stroke-width: 2;
-    z-index: 3;
-    pointer-events: none;
-    }
-    */
-
 
 .svgStyle{
     width: 100%;
@@ -126,7 +104,8 @@ max-device-width
     fill: #8cc63c;
 }
 
-/*OBS! SNODDE FRÅN DERAS HEMSIDA från här*/
+/*Taken from www.tretton37.com
+Starting here*/
 .button{
     pointer-events: all;
     float: right;
@@ -138,7 +117,6 @@ max-device-width
     color: #fff;
     border-radius: 3px;
     text-transform: uppercase;
-    /*display: inline-block;*/
     cursor: pointer;
     text-decoration: none;
     box-sizing: border-box;
@@ -161,14 +139,11 @@ max-device-width
     background-color: #bbdd8b;
     text-decoration: none;
 }
-
-/*till här*/
+/*Ending here*/
 
 .button:disabled{
     background: grey;
 }
-
-
 
 @media screen and (max-width: 1570px) {
     .grid{

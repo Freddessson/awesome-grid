@@ -58,14 +58,18 @@ router.route('/coordinates')
         var c1 = req.body.coordinate1
         var c2 = req.body.coordinate2
 
-        //sending the coordinates to 'toRealCoordinate.js in order to get out X and Y values
+        if (c1 != undefined && c2 != undefined) {
+            //toRealCoord returns a list with x1, x2, y1 and y2 values
+            //these values are saved into mongoDB by setting them to some 'coordinates' attributes declared in the 'coordinates.js' file
             var realCoordList = toRealCoord.toRealCoordinate(c1, c2)
 
             coordinates.x1 = realCoordList.X1;
             coordinates.y1 = realCoordList.Y1;
             coordinates.x2 = realCoordList.X2;
             coordinates.y2 = realCoordList.Y2;
-
+            coordinates.x1y1 = "(" + coordinates.x1 + ", " + coordinates.y1 + ")"
+            coordinates.x2y2 = "(" + coordinates.x2 + ", " + coordinates.y2 + ")"
+        }
 
         // save the coordinates and check for errors
         coordinates.save({}, function (err) {
@@ -107,9 +111,9 @@ router.route('/coordinates/:coordinates_id')
         });
     });
 
-
 //update coordinates by id using PUT http://localhost:3500/api/coordinates/coordinateID 
 router.route('/coordinates/:coordinates_id')
+
     .put(function (req, res) {
         Coordinates.findById(req.params.coordinates_id, function (err, coordinates) {
             console.log("[put]Trying to update coordinates")
@@ -117,18 +121,24 @@ router.route('/coordinates/:coordinates_id')
                 res.send(err);
             coordinates.coordinate1 = req.body.coordinate1;
             coordinates.coordinate2 = req.body.coordinate2;
-            
-            //toRealCoordinate - converting coordinate1 & 2 to real coordinates 
-            var c1 = req.body.coordinate1
-            var c2 = req.body.coordinate2
 
-            var realCoordList = toRealCoord.toRealCoordinate(c1, c2)
 
-            coordinates.x1 = realCoordList.X1;
-            coordinates.y1 = realCoordList.Y1;
-            coordinates.x2 = realCoordList.X2;
-            coordinates.y2 = realCoordList.Y2;
+            if (c1 != undefined && c2 != undefined) {
+                //toRealCoordinate - converting coordinate1 & 2 to real coordinates 
+                var c1 = req.body.coordinate1
+                var c2 = req.body.coordinate2
 
+                //toRealCoord returns a list with x1, x2, y1 and y2 values
+                //these values are saved into mongoDB by setting them to some 'coordinates' attributes declared in the 'coordinates.js' file
+                var realCoordList = toRealCoord.toRealCoordinate(c1, c2)
+
+                coordinates.x1 = realCoordList.X1;
+                coordinates.y1 = realCoordList.Y1;
+                coordinates.x2 = realCoordList.X2;
+                coordinates.y2 = realCoordList.Y2;
+                coordinates.x1y1 = "(" + coordinates.x1 + ", " + coordinates.y1 + ")"
+                coordinates.x2y2 = "(" + coordinates.x2 + ", " + coordinates.y2 + ")"
+            }
             // save the coordinates
             coordinates.save(function (err) {
                 if (err)
