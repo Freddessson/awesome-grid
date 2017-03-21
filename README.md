@@ -20,6 +20,9 @@ Otto Fredriksson<br />
 3. Run `npm install` in terminal. <br /> 
 4. Install mongoDB: `npm install mongodb --save -g`<br /> 
 
+![Awesome-grid preview](./screenGrab.jpg?raw=true)
+![Awesome-grid preview](/screenGrab.jpg?raw=true)
+![alt tag](https://github.com/Freddessson/awesome-grid/blob/master/screenGrab.jpg?raw=true)
 
 <h3>Run</h3> 
 
