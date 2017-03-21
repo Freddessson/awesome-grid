@@ -4,23 +4,23 @@
 ![Awesome-grid preview](/screenGrab.jpg?raw=true)
 ![alt tag](https://github.com/Freddessson/awesome-grid/blob/master/screenGrab.jpg?raw=true)
 
-<h1>A bachelor project <a href="http://tretton37.com/">@Tretton37</a> by:</h1>
+# A bachelor project <a href="http://tretton37.com/">@Tretton37</a> by:
 Douglas Erol Nilsson <br /> 
 Henrik Månsson<br /> 
 Lukas Hedqvist<br /> 
 Otto Fredriksson<br /> 
 <br />
 
-<h2>Install/Run instruction</h2>
+## Install/Run instruction
 
-<h3>Installation - NodeJS & NPM needed.</h3>
+### Installation - NodeJS & NPM needed.
 
 1. Run `npm install` in terminal. <br />
 2. Go to "Backend" folder<br /> 
 3. Run `npm install` in terminal. <br /> 
 4. Install mongoDB: `npm install mongodb --save -g`<br /> 
 
-<h4>Run</h4> 
+### Run
 
 1. Launch mongoDB: `mongod`<br /> 
 2. Start backend. Go to "Backend" folder and run `Node server.js` in terminal.
@@ -33,7 +33,7 @@ The View runs at http://localhost:8080/<br />
 ![Awesome-grid preview](/screenGrab.jpg?raw=true)
 ![alt tag](https://github.com/Freddessson/awesome-grid/blob/master/screenGrab.jpg?raw=true)
 
-<h1>Screen Grabs</h1>
+# Screen Grabs
 
 <p>Desktop version:</p><br /> 
 ![Awesome-grid preview](./screenGrab.jpg?raw=true)
